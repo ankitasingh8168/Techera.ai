@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #FE7D05; /* Orange background for the navbar */
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the content */
+}
+
+.brand-box {
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    margin-right: auto; /* Align the brand box to the left */
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    gap: 15px;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white; /* White text color for better contrast */
+    font-weight: bold;
+}
+
+/* Brand and Highlight */
+.brand {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Image Styles */
+.image-crop{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0px;
+    object-fit: cover;
+}
+
+/* Section Styles */
+.second {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: rgba(189, 244, 234, 0.6); /* Transparent background */
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    background-color: white;
+    width: 302px;
+    margin: 12px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for ID Elements */
+#01 {
+    color: orange; /* Change the color of elements with id="01" to orange */
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#02 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#03 {
+    font-size: 10px;
+    line-height: 1.0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .brand-box {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .flex-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
